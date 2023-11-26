@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}  
+
+.navbar {
+    height: 56px;
+    display: flex;
+    padding: 0 24px 0 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+/*Parte esquerda*/
+.nav-left {
+    width: 146px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left .row-menu {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-left .row-menu .row {
+    width: 18px;
+    border:1px solid #000;
+    position: absolute;
+}
+
+.row-1 {
+   top: 18px;
+   left: 3px; 
+}
+.row-2 {
+    top: 6px;
+    left: 3px;
+}
+
+.row-3 {
+    top: 12px;
+    left: 3px;
+}
+
+.youtube-logo {
+    width: 90px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.youtube-logo img {
+    width: 100%;
+}
+
+/*Parte central*/
+.search-bar {
+    width: 405px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #cccccc;
+}
+
+.search-bar button {
+    width: 57px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 24px;
+
+}
+
+/*Parte direita*/
+.nav-right {
+    width: 130px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-right.simbol {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-right.perfil {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.img-right.perfil img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*conteudo principal*/
+.content{
+    flex: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 28px 0 0 75px;
+    column-gap: 25px;
+}
+
+.container-video {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 1243px;
+    height: 100vh;
+}
+
+.container-video h2 {
+    font-size: 20px;
+}
+
+.container-video  p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-video .video-description {
+    width: 510px;
+    height: 64px;
+}
+
+
+.container-video .video-description p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.watch-video-container {
+    width: 100%;
+    height: 699px;
+}
+
+.watch-video-container iframe {
+    width: 100%;
+    height: 699px;
+    
+}
+
+/*Menu de ações*/
+
+.video-actions {
+    width: 902px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-actions .canal-detail {
+    width: 160px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.canal-img {
+    width: 42px;
+    height:42px ;
+}
+
+.canal-detail img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.video-actions .btn-subscribe {
+    width: 159px;
+    padding: 10.8px 0 10.8px 0;
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.like {
+    width: 63px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like p {
+    font-size: 12px;
+}
+
+.like-img {
+    width: 24px;
+    height: 24px;
+}
+
+.like-img img {
+    width: 100%;
+}
+
+.deslike {
+    width: 90px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deslike p {
+    font-size: 12px;
+}
+
+.deslike-img {
+    width: 24px;
+    height: 24px;
+}
+
+.deslike-img img {
+    width: 100%;
+}
+
+
+.share {
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share p {
+    font-size: 12px;
+}
+
+.share-img {
+    width: 24px;
+    height: 24px;
+}
+
+.share-img img {
+    width: 100%;
+}
+
+.download {
+    width: 82px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download p {
+    font-size: 12px;
+}
+
+.download-img {
+    width: 24px;
+    height: 24px;
+}
+
+.download-img img {
+    width: 100%;
+}
+
+
+/*Sidebar*/
+.container-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 16px;
+}
+
+.sidebar-card {
+    height: 90px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.sidebar-card .sidebar-card-description {
+    display: flex;
+    width: 196px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 16px;
+}
+
+.sidebar-card .sidebar-card-description h3 {
+    font-size: 14px;
+}
+
+.sidebar-card .sidebar-card-description p {
+    font-size: 12px;
+}
